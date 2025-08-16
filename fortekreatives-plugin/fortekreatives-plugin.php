@@ -5,7 +5,7 @@
  * Version: 1.0.1
  * Author: ForteKreatives
  * Author URI: https://fortekreatives.com
- * Update URI: https://gist.githubusercontent.com/cripdk/8d454f951503dbe06465a0d23f13eeae/raw/24479f51633ffa2cdecb3019633730297652bc5c/update.json
+ * Update URI: https://fortekreatives.github.io/fortekreatives-plugin/update.json
  */
 
 add_filter('site_transient_update_plugins', 'my_plugin_check_for_update');
@@ -16,7 +16,7 @@ function my_plugin_check_for_update($transient) {
     }
     
     $plugin_slug = 'fortekreatives-plugin/fortekreatives-plugin.php';
-    $remote_url = 'https://gist.githubusercontent.com/cripdk/8d454f951503dbe06465a0d23f13eeae/raw/24479f51633ffa2cdecb3019633730297652bc5c/update.json';
+    $remote_url = 'https://fortekreatives.github.io/fortekreatives-plugin/update.json';
 
     $remote = wp_remote_get($remote_url, [
         'timeout' => 10,
